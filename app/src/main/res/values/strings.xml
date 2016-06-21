@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Kiu</string>
+    <string name="title_activity_home">KiU</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="okBtn">OK</string>
+    <string name="cancelBtn">CANCEL</string>
+    <string name="helperBtn">View helper</string>
+    <string name="contacthelperBtn">Contact them</string>
+
+    <string name="usernamehint">Username</string>
+    <string name="passwordhint">Password</string>
+    <string name="namehint">Name</string>
+    <string name="lastnamehint">Lastname</string>
+    <string name="dateofbirth">Date of birth</string>
+    <string name="confirmhint">Confirm password</string>
+    <string name="mailhint">Email</string>
+    <string name="numtelhint">Phone number</string>
+    <string name="locationhint">City</string>
+    <string name="postalcodehint">Postal code</string>
+    <string name="startdatehint">Start date</string>
+    <string name="enddatehint">End date</string>
+    <string name="ratehint">Rate</string>
+
+    <string name="usernamelabel">Username :</string>
+    <string name="passwordlabel">Password :</string>
+    <string name="namelabel">Name :</string>
+    <string name="lastnamelabel">Lastname :</string>
+    <string name="dateofbirthlabel">Date of birth :</string>
+    <string name="maillabel">Email :</string>
+    <string name="numtellabel">Phone number :</string>
+    <string name="rateolabel">Rateo :</string>
+    <string name="startdatelbl">Start date :</string>
+    <string name="enddatelbl">End date :</string>
+    <string name="ratelbl">Rate :</string>
+    <string name="locationlbl">City :</string>
+    <string name="postalcodelbl">Postal code :</string>
+
+    <!--Login View elements-->
+    <string name="link_login">Don\'t have an account? Sign up now!</string>
+    <string name="checkbox_text">Remember Username</string>
+    <string name="loginBtn">LOGIN</string>
+
+    <!--Drawer View elements-->
+    <string name="textViewDrawerAct1">Hey, how\'s it going?</string>
+    <string name="title1">Profile</string>
+    <string name="title2">Notification</string>
+    <string name="title3">Announcement</string>
+    <string name="imagetitle1">View</string>
+    <string name="imagetitle2">Edit</string>
+    <string name="imagetitle3">Cancel</string>
+    <string name="imagepostit">Post it</string>
+    <string name="postBtn">POST</string>
+    <string name="searchBtn">SEARCH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

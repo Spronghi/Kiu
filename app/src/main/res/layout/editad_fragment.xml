@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="36dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="16dip"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/locationhint"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="16dip"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/postalcodehint"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="16dip"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/startdatehint"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="16dip"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/enddatehint"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="16dip"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/ratehint"
+                android:inputType="numberDecimal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+>
+
+            <Button
+                android:id="@+id/okBtn"
+                android:text="@string/okBtn"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextIcon"
+                android:onClick="returnHome"
+                />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:text="@string/cancelBtn"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextIcon"
+                android:onClick="returnHome"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

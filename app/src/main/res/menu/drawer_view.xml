@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/title1">
+        <menu>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_view_profile"
+            android:icon="@mipmap/ic_view_profile"
+            android:title="@string/imagetitle1" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@mipmap/ic_edit_profile"
+            android:title="@string/imagetitle2" />
+
+    </group>
+        </menu>
+</item>
+
+<item android:title="@string/title3">
+<menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_post_announcement"
+            android:icon="@mipmap/ic_publish_post"
+            android:title="@string/imagepostit" />
+        <item
+            android:id="@+id/nav_edit_post"
+            android:icon="@mipmap/ic_edit_post"
+            android:title="@string/imagetitle2" />
+        <item
+            android:id="@+id/nav_cancel_post"
+            android:icon="@mipmap/ic_cancel_post"
+            android:title="@string/imagetitle3" />
+    </group>
+</menu>
+</item>
+    <item android:title="@string/title2">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_view_mex"
+                    android:icon="@mipmap/ic_view_mex"
+                    android:title="@string/imagetitle1" />
+            </group>
+        </menu>
+    </item>
+</menu>

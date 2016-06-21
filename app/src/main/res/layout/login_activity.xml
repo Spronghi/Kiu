@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:src="@mipmap/ic_logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="16dip"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/usernamehint"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="16dip"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/passwordhint"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/loginBtn"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/loginBtn"
+            android:textColor="@color/colorTextIcon"
+            android:onClick="loginBtnClicked" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textSize="16dip"
+            android:id="@+id/checkbox_text"
+            android:text="@string/checkbox_text" />
+
+        <TextView
+            android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textIsSelectable="true"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:text="@string/link_login"
+            android:onClick="signupClicked"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+</ScrollView>

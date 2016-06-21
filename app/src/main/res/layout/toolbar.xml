@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:menu="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:title="@string/app_name"
+    android:minHeight="?attr/actionBarSize"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@color/colorPrimaryDark">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:backgroundTint="@color/colorTextIcon"
+            android:imeOptions="actionSearch"
+            android:hint="@string/locationhint"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/action_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_action_search"
+            android:tint="@color/colorTextIcon"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="returnHome"/>
+</LinearLayout>
+</android.support.v7.widget.Toolbar>
