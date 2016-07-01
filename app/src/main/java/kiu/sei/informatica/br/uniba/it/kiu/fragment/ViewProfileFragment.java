@@ -1,17 +1,13 @@
 package kiu.sei.informatica.br.uniba.it.kiu.fragment;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import kiu.sei.informatica.br.uniba.it.kiu.R;
 
-/**
- * Created by matte on 14/06/2016.
- */
-public class ViewProfileFragment extends Fragment {
+public class ViewProfileFragment extends CloneableFragment{
     // The onCreateView method is called when Fragment should create its View object hierarchy,
     // either dynamically or via XML layout inflation.
     @Override
