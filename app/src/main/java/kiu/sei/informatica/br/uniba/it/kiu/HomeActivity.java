@@ -20,10 +20,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import kiu.sei.informatica.br.uniba.it.kiu.fragment.EditAdFragment;
-import kiu.sei.informatica.br.uniba.it.kiu.fragment.EditProfilFragment;
-import kiu.sei.informatica.br.uniba.it.kiu.fragment.ListMexFragment;
-import kiu.sei.informatica.br.uniba.it.kiu.fragment.PostAdFragment;
+import kiu.sei.informatica.br.uniba.it.kiu.fragment.FragmentFactory;
 import kiu.sei.informatica.br.uniba.it.kiu.fragment.ViewProfileFragment;
 
 /**
@@ -107,34 +104,7 @@ public class HomeActivity extends AppCompatActivity {
 
     public void selectDrawerItem(MenuItem menuItem) {
         // Create a new fragment and specify the fragment to show based on nav item clicked
-        Fragment fragment = null;
-        Class fragmentClass = null;
-        switch(menuItem.getItemId()) {
-            case R.id.nav_view_profile:
-                fragmentClass = ViewProfileFragment.class;
-                break;
-            case R.id.nav_edit_profile:
-                fragmentClass = EditProfilFragment.class;
-                break;
-            case R.id.nav_post_announcement:
-                       fragmentClass = PostAdFragment.class;
-                break;
-            case R.id.nav_edit_post:
-                       fragmentClass = EditAdFragment.class;
-                break;
-            case R.id.nav_cancel_post:
-                //       fragmentClass = SecondFragment.class;
-                break;
-            case R.id.nav_view_mex:
-                        fragmentClass = ListMexFragment.class;
-                break;
-        }
-
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Fragment fragment = FragmentFactory.getInstance(menuItem.getItemId());
 
         // Insert the fragment by replacing any existing fragment
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -151,14 +121,7 @@ public class HomeActivity extends AppCompatActivity {
 
     public void returnHome(View view){
         // Create a new fragment and specify the fragment to show based on nav item clicked
-        Fragment fragment = null;
-        Class fragmentClass;
-        fragmentClass = ViewProfileFragment.class;
-        try {
-            fragment = (Fragment) fragmentClass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Fragment fragment = FragmentFactory.getInstance(R.id.nav_view_profile);
 
         // Insert the fragment by replacing any existing fragment
         FragmentManager fragmentManager = getSupportFragmentManager();
